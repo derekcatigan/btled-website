@@ -605,10 +605,10 @@
 
 .promo-video {
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 9;
   display: block;
+  border: none;
   border-radius: 15px;
-  transition: transform 0.3s ease;
 }
 
 /* Hide play button by default */
