@@ -1,0 +1,170 @@
+/* =========================
+   PAGE HERO
+========================= */
+.page-hero {
+  background:
+    linear-gradient(rgba(10, 59, 119, 0.85), rgba(10, 59, 119, 0.85)),
+    url("../media/images/image01.png") center / cover no-repeat;
+  color: #ffffff;
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.page-hero p {
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #e5e7eb;
+}
+
+/* =========================
+   PEOPLE SECTIONS
+========================= */
+.people-section {
+  padding: 4.5rem 1.5rem;
+  text-align: center;
+}
+
+.people-section.alt-bg {
+  background-color: #f9fafb;
+}
+
+.people-section h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #0a3b77;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+}
+
+.people-section h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #0a3b77, #1d4ed8);
+  border-radius: 2px;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+/* =========================
+   GRID
+========================= */
+/* =========================
+   Dean Row (centered single card)
+========================= */
+.dean-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.dean-row .person-card {
+  max-width: 320px;
+  width: 100%;
+}
+
+/* =========================
+   Faculty Row (grid)
+========================= */
+.faculty-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  justify-items: center;
+  gap: 1rem;
+}
+
+/* =========================
+   PERSON CARD
+========================= */
+.person-card {
+  width: 100%;
+  max-width: 320px;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.person-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(to right, #0a3b77, #2563eb);
+}
+
+.person-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+}
+
+/* =========================
+   IMAGE
+========================= */
+.person-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  padding: 1rem;
+  background: #f3f4f6;
+}
+
+/* =========================
+   INFO
+========================= */
+.person-info {
+  padding: 1.5rem 1.25rem 1.75rem;
+}
+
+.person-info h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #111827;
+}
+
+.person-info .role {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  margin-bottom: 0.6rem;
+  color: #0a3b77;
+  background: #e0ecff;
+  border-radius: 999px;
+}
+
+.person-info .department {
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.45;
+}
+
+@media (max-width: 768px) {
+  .person-card img {
+    height: 220px;
+  }
+}

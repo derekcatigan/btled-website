@@ -1,0 +1,242 @@
+/* =========================
+   Announcements Page
+========================= */
+.announcement-page {
+  padding: 5rem 1.5rem;
+  background: linear-gradient(180deg, #f9fafb 0%, #f1f5f9 100%);
+}
+
+.announcement-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================
+   Page Header
+========================= */
+.announcement-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #0a3b77 0%, #1558a8 50%, #2272c3 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft radial glow overlay for depth */
+.announcement-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse at 20% 50%,
+      rgba(255, 255, 255, 0.08) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at 80% 20%,
+      rgba(255, 255, 255, 0.06) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+
+/* Subtle dot grid texture */
+.announcement-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.announcement-header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.announcement-header p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   Featured Announcement
+========================= */
+.announcement-featured {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 3rem;
+  margin-bottom: 4rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.announcement-featured::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-left: 6px solid #0a3b77;
+  pointer-events: none;
+}
+
+.featured-content h2 {
+  font-size: 1.9rem;
+  color: #0a3b77;
+  margin: 1rem 0;
+}
+
+.announcement-date {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.announcement-excerpt {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 1.75rem;
+}
+
+.announcement-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1.6rem;
+  background-color: #0a3b77;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.announcement-btn:hover {
+  background-color: #08325f;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   Tags
+========================= */
+.announcement-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+}
+
+.announcement-tag.featured {
+  background-color: rgba(10, 59, 119, 0.1);
+  color: #0a3b77;
+}
+
+.announcement-tag.advisory {
+  background-color: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+}
+
+.announcement-tag.event {
+  background-color: rgba(22, 163, 74, 0.1);
+  color: #16a34a;
+}
+
+.announcement-tag.notice {
+  background-color: rgba(234, 179, 8, 0.15);
+  color: #ca8a04;
+}
+
+/* =========================
+   Grid
+========================= */
+.announcement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+/* =========================
+   Cards
+========================= */
+.announcement-card {
+  background-color: #ffffff;
+  padding: 2.25rem;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.announcement-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 0;
+  background-color: #0a3b77;
+  transition: width 0.3s ease;
+  border-radius: 0 0 16px 16px;
+}
+
+.announcement-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-card:hover::after {
+  width: 100%;
+}
+
+.announcement-card h3 {
+  font-size: 1.3rem;
+  color: #0a3b77;
+  margin: 0.9rem 0;
+}
+
+.announcement-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #0a3b77;
+  text-decoration: none;
+}
+
+.announcement-link:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+  .announcement-featured {
+    padding: 2.2rem 1.8rem;
+  }
+
+  .featured-content h2 {
+    font-size: 1.55rem;
+  }
+}

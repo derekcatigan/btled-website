@@ -1,0 +1,322 @@
+/* =========================
+   Programs Page
+========================= */
+.programs-page {
+  background-color: #f6f6f6;
+}
+
+/* Hero Header */
+.programs-hero {
+  padding: 6rem 1.5rem;
+  background: linear-gradient(135deg, #0a3b77 0%, #062142 100%);
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.programs-hero::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+
+.programs-hero .container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.programs-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.programs-hero p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+/* Programs List */
+.programs-list {
+  padding: 5rem 1.5rem;
+}
+
+.programs-list .container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Specializations Grid */
+.specialization-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+/* Specialization Box - Modern Redesign */
+.specialization-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* Soft gradient background so it's not "stark white" */
+  background: linear-gradient(145deg, #fdfdfd, #f0f4f8);
+  border: 1px solid rgba(10, 59, 119, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+}
+
+.specialization-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(10, 59, 119, 0.15);
+  border-color: #0a3b77;
+}
+
+/* Icon Styling */
+.icon-wrapper {
+  width: 60px;
+  height: 60px;
+  background: #0a3b77;
+  color: #ffff; /* SLSU Gold */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 15px rgba(10, 59, 119, 0.2);
+}
+
+.specialization-box h3 {
+  font-size: 1.3rem;
+  color: #0a3b77;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.specialization-box p {
+  color: #5a6b81;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  flex-grow: 1; /* Pushes button to the bottom */
+}
+
+/* The Modern Button */
+.btn-learn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #0a3b77;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition:
+    gap 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-learn i {
+  font-size: 1.2rem;
+}
+
+.btn-learn:hover {
+  color: #ffc107;
+  gap: 12px; /* Slight movement on hover */
+}
+
+/* Decorative Background element */
+.specialization-box::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 80px;
+  height: 80px;
+  background: rgba(10, 59, 119, 0.03);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Degree Card */
+.degree-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 4rem;
+  margin-bottom: 4rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+/* Degree Header */
+.degree-header {
+  max-width: 800px;
+  margin-bottom: 2.5rem;
+}
+
+.degree-header h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.degree-header h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 4px;
+  background: #ffc107; /* SLSU Gold accent */
+  border-radius: 2px;
+}
+
+.degree-header p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #374151;
+}
+
+/* BEED Description */
+.degree-description {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 5px solid #ffc107;
+}
+.degree-description p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #374151;
+  max-width: 900px;
+}
+
+/* BEED Section Modern Split Layout */
+.beed-highlight {
+  background: linear-gradient(145deg, #f0f4f8, #ffffff);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.degree-content-wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Badge Styling */
+.program-header {
+  display: flex;
+  flex-direction: column;
+}
+.program-badge {
+  text-align: center;
+  width: 200px;
+  padding: 5px 15px;
+  background: rgba(10, 59, 119, 0.1);
+  color: #0a3b77;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+/* Redesigning the description box for BEED */
+.beed-highlight .degree-description {
+  background: transparent;
+  padding: 0;
+  border-left: none;
+  margin-top: 1.5rem;
+}
+
+/* Pillar Items (Right Side) */
+.pillars-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pillar-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  background: #ffffff;
+  padding: 1.2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(10, 59, 119, 0.05);
+}
+
+.pillar-item:hover {
+  transform: scale(1.03);
+  border-color: #ffc107;
+}
+
+.pillar-item i {
+  font-size: 1.8rem;
+  color: #0a3b77;
+  background: #f0f4f8;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.pillar-item h4 {
+  font-size: 1.05rem;
+  color: #0a3b77;
+  margin-bottom: 0.2rem;
+}
+
+.pillar-item p {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .programs-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .programs-hero p {
+    font-size: 0.95rem;
+  }
+
+  .degree-card {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .degree-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .specialization-box {
+    padding: 1.5rem;
+  }
+
+  .specialization-box h3 {
+    font-size: 1.1rem;
+  }
+
+  .degree-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .beed-highlight {
+    padding: 3rem 2rem;
+  }
+}

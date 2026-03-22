@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Southern Leyte State University</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../assets/media/logos/slsumain_logo.ico" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="../../assets/css/enrollment.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Box Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css"
+      rel="stylesheet" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="navbar">
+      <div class="navbar-container">
+        <!-- Logo -->
+        <div class="navbar-logo">
+          <img src="../../assets/media/logos/slsu_logo.png" alt="SLSU Logo" />
+        </div>
+
+        <!-- Mobile Toggle -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <i class="bx bx-menu"></i>
+        </label>
+
+        <!-- Navigation -->
+        <nav class="navbar-links">
+          <a href="../../index.html">Home</a>
+          <a href="../announcement.html">Announcements</a>
+          <a href="../programs.html">Programs</a>
+          <a href="../admission.html">Admission</a>
+          <a href="../retention.html">Retention</a>
+          <a href="../about.html">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="enrollment">
+      <section class="enrollment-container">
+        <!-- PAGE HEADER -->
+        <header class="enrollment-page-header">
+          <h1>Online Enrollment</h1>
+          <p class="academic-year">Academic Year 2025 – 2026</p>
+
+          <!-- STATUS TOAST -->
+          <div class="enrollment-toast closed">
+            <strong>CLOSED!</strong>
+            Enrollment is open from <b>December 26, 2025</b> until
+            <b>January 14, 2026</b>.
+          </div>
+        </header>
+
+        <!-- STEPS -->
+        <section class="enrollment-steps">
+          <!-- STEP 1 -->
+          <div class="step-card closed">
+            <div class="step-number">1</div>
+
+            <div class="step-content">
+              <h2>Submit Consent</h2>
+
+              <p>
+                Don’t hesitate to get in touch with your academic adviser for
+                consultation and to provide your consent for them to process
+                your enrollment on your behalf. This ensures a smooth and
+                efficient enrollment process during the holiday season.
+              </p>
+
+              <p class="consent-text">
+                By clicking the submit button, I confirm my intention to enroll
+                this semester and authorize my academic adviser to process my
+                enrollment on my behalf.
+              </p>
+
+              <!-- TEXT AREA -->
+              <div class="form-group form-note">
+                <label for="student-notes">
+                  Instructions / Notes for Adviser
+                </label>
+
+                <div class="textarea-wrapper">
+                  <textarea
+                    id="student-notes"
+                    rows="5"
+                    placeholder="Example:
+• Preferred schedule
+• Subjects to repeat
+• Special concerns for this semester"
+                    disabled></textarea>
+                </div>
+
+                <small class="form-hint">
+                  This information will be reviewed by your academic adviser
+                  during subject encoding.
+                </small>
+              </div>
+
+              <!-- ACTION AREA -->
+              <div class="step-actions">
+                <button class="btn-primary" disabled>Submit Consent</button>
+                <span class="status-badge closed">Enrollment Closed</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="step-card pending">
+            <div class="step-number">2</div>
+
+            <div class="step-content">
+              <h2>Review / Encode Department</h2>
+              <p>
+                Your year-level adviser will input the subjects and schedules
+                available based on your current academic year. Subjects added
+                will be shown here.
+              </p>
+
+              <p class="note">
+                If you have any instructions, ensure they are included in Step
+                1.
+              </p>
+
+              <span class="status-badge pending">Pending Adviser Action</span>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="step-card disabled">
+            <div class="step-number">3</div>
+
+            <div class="step-content">
+              <h2>Free Higher Education (FHE)</h2>
+              <p>
+                Assessment of your eligibility for the Free Higher Education
+                program will be processed after subject encoding.
+              </p>
+
+              <span class="status-badge disabled">Locked</span>
+            </div>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="step-card disabled">
+            <div class="step-number">4</div>
+
+            <div class="step-content">
+              <h2>Cashier</h2>
+              <p>
+                Any applicable fees will be assessed and processed by the
+                cashier’s office after FHE evaluation.
+              </p>
+
+              <span class="status-badge disabled">Locked</span>
+            </div>
+          </div>
+
+          <!-- STEP 5 -->
+          <div class="step-card disabled">
+            <div class="step-number">5</div>
+
+            <div class="step-content">
+              <h2>Registrar</h2>
+              <p>
+                Final verification and approval of enrollment will be completed
+                by the registrar’s office.
+              </p>
+
+              <span class="status-badge disabled">Locked</span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Brand / University Info -->
+        <div class="footer-column footer-brand">
+          <img
+            src="/assets/media/logos/slsumain_logo.png"
+            alt="Southern Leyte State University Logo" />
+          <h3>Southern Leyte State University</h3>
+          <p>
+            Faculty of Technology and Vocational Education <br />
+            Committed to quality instruction, innovation, and community service.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="announcement.html">Announcements</a></li>
+          </ul>
+        </div>
+
+        <!-- Academic -->
+        <div class="footer-column">
+          <h4>Academics</h4>
+          <ul>
+            <li><a href="#">BTLED Program</a></li>
+            <li><a href="#">BEED Program</a></li>
+            <li><a href="#">Curriculum</a></li>
+            <li><a href="#">Faculty</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li>📍 Sogod, Southern Leyte</li>
+            <li>📞 (053) 000-0000</li>
+            <li>✉️ info@slsu.edu.ph</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p>© 2026 Southern Leyte State University. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
