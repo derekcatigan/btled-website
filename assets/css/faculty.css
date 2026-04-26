@@ -104,6 +104,8 @@
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .person-card::before {
@@ -137,6 +139,7 @@
 ========================= */
 .person-info {
   padding: 1.5rem 1.25rem 1.75rem;
+  flex: 1;
 }
 
 .person-info h3 {
@@ -161,6 +164,36 @@
   font-size: 0.85rem;
   color: #6b7280;
   line-height: 1.45;
+}
+
+/* =========================
+   PERSON CARD FOOTER
+========================= */
+.person-card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.85rem 1.25rem;
+  border-top: 1px solid #e5e7eb;
+  background: #f8faff;
+  margin-top: auto;
+}
+
+.specialization-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+.specialization-value {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #0a3b77;
+  text-align: center;
+  line-height: 1.4;
 }
 
 @media (max-width: 768px) {
